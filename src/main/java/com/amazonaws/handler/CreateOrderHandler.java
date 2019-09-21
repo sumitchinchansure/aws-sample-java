@@ -66,6 +66,7 @@ public class CreateOrderHandler implements OrderRequestStreamHandler {
             event = objectMapper.readTree(input);
         } catch (JsonMappingException e) {
             writeInvalidJsonInStreamResponse(objectMapper, output, e.getMessage());
+            // add changes here and commit it
             return;
         }
 

@@ -71,6 +71,8 @@ public class GetOrderHandler implements OrderRequestStreamHandler {
                     new GatewayResponse<>(
                             objectMapper.writeValueAsString(ORDER_ID_WAS_NOT_SET),
                             APPLICATION_JSON, SC_BAD_REQUEST));
+
+                            // this is new comment.
             return;
         }
         try {
